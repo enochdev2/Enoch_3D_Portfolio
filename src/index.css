@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body{
+    margin:0;
+    color:white;
+    background:
+        radial-gradient(circle at 15% 30%, rgba(37,99,235,.12), transparent 35%),
+        radial-gradient(circle at 90% 50%, rgba(249,115,22,.18), transparent 30%),
+        #090b11;
+}
+
+:root{
+
+--background:#09090b;
+
+--surface:#18181b;
+
+--card:#27272a;
+
+--text:#ffffff;
+
+--muted:#a1a1aa;
+
+--primary:#f97316;
+
+}
+
+.hero-particles{
+    position:absolute;
+    inset:0;
+    background-image:
+        radial-gradient(#f97316 1px, transparent 1px);
+
+    background-size:180px 180px;
+
+    opacity:.4;
+}
+
+.hero-noise{
+    position:absolute;
+    inset:0;
+    opacity:.05;
+
+    background-image:url("/noise.png");
+}
+
+.hero-grid {
+  background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+  background-size: 70px 70px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
