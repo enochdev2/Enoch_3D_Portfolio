@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { Button } from "../../components/ui";
 import { hero } from "../../data/hero";
 
@@ -19,9 +20,21 @@ export default function HeroContent() {
       </p>
 
       <div className="flex flex-wrap gap-5">
-        <Button>View Portfolio</Button>
+        <Button >
+          <a href="#projects">View Portfolio</a>
+        </Button>
 
-        <Button variant="secondary">Download Resume</Button>
+        <Button variant="secondary" >
+          <a
+            href="/resume/Enoch-Promise-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <Download size={18} />
+            Download Resume
+          </a>
+        </Button>
       </div>
     </div>
   );

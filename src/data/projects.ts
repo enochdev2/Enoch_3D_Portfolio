@@ -1,3 +1,6 @@
+import {Human} from "../assets/hero";
+import {CatCartoon} from "../assets/hero";
+
 export interface GalleryItem {
   type: "image" | "video";
   src: string;
@@ -26,8 +29,8 @@ export const projects: Project[] = [
 
     category: "Character",
 
-    cover: "/images/projects/human.jpg",
-    image: "/images/projects/human.jpg",
+    cover:`${Human}`,
+    image: `${Human}`,
 
     overview: "A stylized low-poly human character created with Blender, focusing on simple geometry, clean shapes, and a game-ready aesthetic.",
 
@@ -51,15 +54,15 @@ export const projects: Project[] = [
 
     category: "Character",
 
-    cover: "/images/projects/cartoon.jpg",
-    image: "/images/projects/cartoon.jpg",
+    cover: `${CatCartoon}`,
+    image: `${CatCartoon}`,
 
     overview: "A stylized cartoon character created in Blender, exploring expressive shapes, proportions, and a playful visual style.",
 
     gallery: [
       {
         type: "image",
-        src: "/images/projects/cartoon.jpg",
+        src: `${CatCartoon}`,
       },
     ],
 

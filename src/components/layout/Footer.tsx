@@ -9,7 +9,7 @@ export default function Footer() {
         </p>
 
         <p className="text-zinc-500">
-          Built with React & Tailwind CSS
+          Building System and Creating Digital Experiences.
         </p>
       </Container>
     </footer>
