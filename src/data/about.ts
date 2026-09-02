@@ -1,6 +1,6 @@
 export const about = {
   intro:
-  "I'm a 3D Artist and Animator who creates visuals designed to communicate, engage, and deliver value. I bring ideas to life through stylized characters, cinematic storytelling, product visualization, and animation—helping brands capture attention, communicate their value, and create stronger connections with their audience.",
+  "I’m Enoch Promise, a 3D Character Artist & Animator passionate about bringing characters, products, and stories to life through 3D. My work combines **character art, animation, and visual storytelling**, with a focus on stylized and cartoon aesthetics. I work across the 3D pipeline, including modeling, sculpting, retopology, UV unwrapping, texturing, materials, rigging, skinning, lighting, rendering, and animation. Alongside character work, I create **3D product visualizations and commercial animations**, turning everyday products into polished visuals designed for advertising, social media, and digital experiences. I’m continuously developing my artistic and technical skills through hands-on projects, experimentation, and storytelling. This portfolio is a collection of that journey — the characters I create, the products I visualize, and the animations I bring to life. Currently exploring:** Character Art • Animation • Product Visualization • Visual Storytelling",
 
   // experience: "1+ Years Learning",
   // experience: "1+ Year of 3D Practice",

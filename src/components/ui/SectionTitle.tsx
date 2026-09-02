@@ -8,7 +8,7 @@ export default function SectionTitle({
   subtitle,
 }: Props) {
   return (
-    <div className="mb-16">
+    <div className="mb-3">
       <p className="mb-3 text-orange-500 uppercase tracking-[0.3em]">
         {subtitle}
       </p>

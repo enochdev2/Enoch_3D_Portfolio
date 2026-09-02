@@ -45,10 +45,10 @@ export const software = [
 
 "Blender",
 
-"Photoshop",
+// "Photoshop",
 
-"Substance Painter",
+// "Substance Painter",
 
-"Unreal Engine",
+// "Unreal Engine",
 
 ];
