@@ -10,7 +10,7 @@ export const skills: Skill[] = [
   {
     title: "Character Modeling",
 
-    level: 65,
+    level: 70,
 
     experience: "Beginner",
   },
@@ -26,9 +26,9 @@ export const skills: Skill[] = [
   {
     title: "Animation",
 
-    level: 45,
+    level: 80,
 
-    experience: "Beginner",
+    experience: "Intermediate",
   },
 
   {

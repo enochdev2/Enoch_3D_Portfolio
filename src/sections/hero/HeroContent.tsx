@@ -26,7 +26,7 @@ export default function HeroContent() {
 
         <Button variant="secondary" >
           <a
-            href="/resume/Enoch-Promise-Resume.pdf"
+            href="/enoch.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"

@@ -14,7 +14,7 @@ export default function SkillProgress({ level }: Props) {
         />
       </div>
 
-      <p>{level}%</p>
+      {/* <p>{level}%</p> */}
     </div>
   );
 }
