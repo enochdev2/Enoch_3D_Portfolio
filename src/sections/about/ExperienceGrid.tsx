@@ -3,12 +3,12 @@ import { Boxes, Clapperboard, Star, Clock3 } from "lucide-react";
 const stats = [
   {
     icon: Boxes,
-    value: "15+",
+    value: "10+",
     title: "Projects",
   },
   {
     icon: Clapperboard,
-    value: "8+",
+    value: "3+",
     title: "Animations",
   },
   {
@@ -18,8 +18,8 @@ const stats = [
   },
   {
     icon: Clock3,
-    value: "1+",
-    title: "Years Learning",
+    value: "1/2",
+    title: " Year of 3D Practic",
   },
 ];
 

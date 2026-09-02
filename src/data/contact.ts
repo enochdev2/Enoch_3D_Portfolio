@@ -15,7 +15,7 @@ export const contactInfo = [
   {
     title: "LinkedIn",
     value: "linkedin.com/in/enoch",
-    href: "https://linkedin.com/in/enoch",
+    href: "https://www.linkedin.com/in/enoch-akhabue-01b991269/",
     icon: LineChart,
   },
   {

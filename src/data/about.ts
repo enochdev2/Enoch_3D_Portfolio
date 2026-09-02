@@ -1,20 +1,25 @@
 export const about = {
   intro:
-    "I'm a 3D Character Artist and Animator passionate about creating stylized characters, hard-surface assets, and engaging animations. My goal is to build digital experiences that help brands communicate their stories in a memorable way.",
+  "I'm a 3D Artist and Animator who creates visuals designed to communicate, engage, and deliver value. I bring ideas to life through stylized characters, cinematic storytelling, product visualization, and animation—helping brands capture attention, communicate their value, and create stronger connections with their audience.",
 
-  experience: "1+ Years Learning",
+  // experience: "1+ Years Learning",
+  // experience: "1+ Year of 3D Practice",
 
   software: [
     "Blender",
-    "Substance Painter",
-    "Photoshop",
+    // "Substance Painter",
+    // "Photoshop",
     "Unreal Engine",
   ],
 
   services: [
-    "Character Modeling",
+    "3D Character Modeling",
+    "Character Rigging",
+    "3D Animation",
+    "Cartoon Filmmaking",
+    "Product Visualization",
+    "Product Animation",
     "Hard Surface Modeling",
-    "Animation",
-    "Simulation",
+    "3D Simulation",
   ],
 };
