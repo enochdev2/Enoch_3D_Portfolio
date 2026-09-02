@@ -2,6 +2,9 @@ import {Human} from "../assets/hero";
 import {mangoJuice} from "../assets/hero";
 import {clothSimulation} from "../assets/hero";
 import {CatCartoon} from "../assets/hero";
+import {nivea} from "../assets/hero";
+import {earphone} from "../assets/hero";
+import {hammer} from "../assets/hero";
 
 export interface GalleryItem {
   type: "image" | "video";
@@ -35,7 +38,7 @@ export const projects: Project[] = [
     image: `${Human}`,
 
     overview:
-      "A stylized low-poly human character created with Blender, focusing on simple geometry, clean shapes, and a game-ready aesthetic.",
+      "A stylized low-poly human character created in Blender, focusing on simple geometry, clean shapes, proportions, and a game-ready aesthetic.",
 
     gallery: [
       {
@@ -46,7 +49,7 @@ export const projects: Project[] = [
 
     software: ["Blender"],
 
-    tags: ["Low Poly", "Game Asset"],
+    tags: ["Low Poly", "Character", "Game Asset"],
   },
 
   {
@@ -61,7 +64,7 @@ export const projects: Project[] = [
     image: `${CatCartoon}`,
 
     overview:
-      "A stylized cartoon character created in Blender, exploring expressive shapes, proportions, and a playful visual style.",
+      "A stylized cartoon character created in Blender, exploring expressive shapes, proportions, character modeling, and a playful visual style.",
 
     gallery: [
       {
@@ -83,8 +86,8 @@ export const projects: Project[] = [
 
     category: "Hard Surface",
 
-    cover: "/images/projects/hammer.jpg",
-    image: "/images/projects/hammer.jpg",
+    cover: `${hammer}`,
+    image: `${hammer}`,
 
     overview:
       "A hard-surface hammer model created in Blender to practice clean topology, mechanical forms, proportions, and detailed 3D modeling.",
@@ -92,7 +95,7 @@ export const projects: Project[] = [
     gallery: [
       {
         type: "image",
-        src: "/images/projects/hammer.jpg",
+        src: `${hammer}`,
       },
     ],
 
@@ -103,7 +106,7 @@ export const projects: Project[] = [
 
   {
     id: 4,
-    slug: "Cloth",
+    slug: "cloth-simulation",
 
     title: "Cloth Simulation",
 
@@ -113,7 +116,7 @@ export const projects: Project[] = [
     image: `${clothSimulation}`,
 
     overview:
-      "A Cloth simulation created in Blender to explore realistic motion, Cloth behavior, simulation settings, and visual effects.",
+      "A cloth simulation created in Blender to explore realistic movement, cloth behavior, simulation settings, and visual effects.",
 
     gallery: [
       {
@@ -124,14 +127,119 @@ export const projects: Project[] = [
 
     software: ["Blender"],
 
-    tags: ["Simulation", "Fluid", "Visual Effects"],
+    tags: ["Simulation", "Cloth", "Visual Effects"],
   },
 
   {
     id: 5,
-    slug: "3d-product-visualization",
+    slug: "cream-product-animation",
 
-    title: "3D Product Visualization & Advertising",
+    title: "Cream Product Animation",
+
+    category: "Product Visualization",
+
+    cover: `${nivea}`,
+    image: `${nivea}`,
+
+    overview:
+      "A 3D product visualization and animation created for a cosmetic cream product, focusing on realistic modeling, materials, lighting, composition, and cinematic product presentation.",
+
+    gallery: [
+      {
+        type: "image",
+        src: `${nivea}`,
+      },
+      {
+        type: "video",
+        src: "https://youtu.be/bt91NEkW67I?si=XsZVYZq1RAH0xK3g",
+      },
+    ],
+
+    software: ["Blender"],
+
+    tags: [
+      "Product Visualization",
+      "Product Animation",
+      "3D Rendering",
+      "Advertising",
+    ],
+  },
+
+  {
+    id: 6,
+    slug: "wireless-earphone-animation",
+
+    title: "Wireless Earphone Animation",
+
+    category: "Product Visualization",
+
+    cover: `${earphone}`,
+    image: `${earphone}`,
+
+    overview:
+      "A 3D product animation created for wireless earphones, exploring product modeling, realistic materials, lighting, camera movement, and commercial presentation.",
+
+    gallery: [
+      {
+        type: "image",
+        src: `${earphone}`,
+      },
+      {
+        type: "video",
+        src: "https://youtu.be/SgTf3V7J5ec?si=kvWIaxMeAyVkc80j",
+      },
+    ],
+
+    software: ["Blender"],
+
+    tags: [
+      "Product Visualization",
+      "Product Animation",
+      "Consumer Electronics",
+      "Advertising",
+    ],
+  },
+
+  {
+    id: 7,
+    slug: "headphone-product-animation",
+
+    title: "Headphone Product Animation",
+
+    category: "Product Visualization",
+
+    cover: "/images/projects/headphone.jpg",
+    image: "/images/projects/headphone.jpg",
+
+    overview:
+      "A 3D headphone visualization and animation focused on product modeling, materials, lighting, camera composition, and polished commercial presentation.",
+
+    gallery: [
+      {
+        type: "image",
+        src: "/images/projects/headphone.jpg",
+      },
+      {
+        type: "video",
+        src: "YOUR_YOUTUBE_VIDEO_URL",
+      },
+    ],
+
+    software: ["Blender"],
+
+    tags: [
+      "Product Visualization",
+      "Product Animation",
+      "Consumer Electronics",
+      "Advertising",
+    ],
+  },
+
+  {
+    id: 8,
+    slug: "drink-can-product-animation",
+
+    title: "Drink Can Product Animation",
 
     category: "Product Visualization",
 
@@ -139,7 +247,7 @@ export const projects: Project[] = [
     image: `${mangoJuice}`,
 
     overview:
-      "A commercial-focused 3D product visualization created to demonstrate how realistic modeling, materials, lighting, composition, and rendering can transform a product into premium advertising content. The project explores how 3D visualization can help businesses create engaging visuals for product launches, social media, promotional campaigns, and advertising.",
+      "A commercial-focused 3D drink can visualization created to explore realistic materials, product lighting, composition, camera animation, and cinematic advertising presentation.",
 
     gallery: [
       {
@@ -154,15 +262,19 @@ export const projects: Project[] = [
         type: "image",
         src: "/images/projects/mango-juice-3.jpg",
       },
+      {
+        type: "video",
+        src: "YOUR_YOUTUBE_VIDEO_URL",
+      },
     ],
 
     software: ["Blender"],
 
     tags: [
       "Product Visualization",
-      "Product Advertising",
-      "3D Rendering",
       "Product Animation",
+      "Advertising",
+      "3D Rendering",
     ],
   },
 ];

@@ -9,6 +9,9 @@ export default function AboutContent() {
       <SectionTitle subtitle="WHO I AM" title="About Me" />
 
       <p className="mt-2 max-w-2xl leading-8 text-zinc-400">{about.intro}</p>
+      <p className="mt-2 max-w-2xl leading-8 text-zinc-400">{about.intro2}</p>
+      <p className="mt-2 max-w-2xl leading-8 text-zinc-400">{about.intro3}</p>
+      <p className="mt-2 max-w-2xl leading-8 text-zinc-400">{about.intro4}</p>
 
       <div className="mt-4 flex flex-wrap gap-4">
         {about.software.map((item) => (
