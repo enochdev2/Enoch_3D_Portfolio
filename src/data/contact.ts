@@ -14,8 +14,8 @@ export const contactInfo = [
   },
   {
     title: "LinkedIn",
-    value: "linkedin.com/in/enoch",
-    href: "https://www.linkedin.com/in/enoch-akhabue-01b991269/",
+    value: "linkedin.com/in/enoch-akhabue-3d",
+    href: "https://www.linkedin.com/in/enoch-akhabue-3d/",
     icon: LineChart,
   },
   {
@@ -26,8 +26,8 @@ export const contactInfo = [
   },
   {
     title: "X (Twitter)",
-    value: "@EnochToonStudio",
-    href: "https://www.youtube.com/@EnochToon",
+    value: "@Enoch_Builds",
+    href: "https://twitter.com/Enoch_Builds",
     icon: X,
   },
 
