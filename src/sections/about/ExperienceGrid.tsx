@@ -1,42 +1,46 @@
-import { Boxes, Clapperboard, Star, Clock3 } from "lucide-react";
+import { Box, Clapperboard, Cuboid, Waves } from "lucide-react";
 
-const stats = [
+const focusAreas = [
   {
-    icon: Boxes,
-    value: "10+",
-    title: "Projects",
+    icon: Box,
+    title: "Character art",
+    detail: "Stylized forms, proportions, and character modeling.",
+  },
+  {
+    icon: Cuboid,
+    title: "Product visuals",
+    detail: "Product form, materials, lighting, and presentation.",
   },
   {
     icon: Clapperboard,
-    value: "3+",
-    title: "Animations",
+    title: "Animation",
+    detail: "Character movement, product motion, and camera work.",
   },
   {
-    icon: Star,
-    value: "100%",
-    title: "Passion",
-  },
-  {
-    icon: Clock3,
-    value: "1/2",
-    title: " Year of 3D Practic",
+    icon: Waves,
+    title: "Simulation",
+    detail: "Cloth studies and procedural visual experiments.",
   },
 ];
 
 export default function ExperienceGrid() {
   return (
-    <div className="mt-8 rounded-3xl border border-zinc-800 bg-[#111827]/70 p-8 py-5">
-      <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
-        {stats.map((item) => {
+    <div className="mt-9">
+      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-zinc-500">
+        Creative focus
+      </p>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {focusAreas.map((item) => {
           const Icon = item.icon;
 
           return (
-            <div key={item.title} className="text-center">
-              <Icon className="mx-auto mb-2 text-orange-500" size={30} />
-
-              <h3 className="text-3xl font-bold">{item.value}</h3>
-
-              <p className="mt-1 text-sm text-zinc-400">{item.title}</p>
+            <div
+              key={item.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.025] p-4 transition duration-300 hover:-translate-y-1 hover:border-orange-400/30"
+            >
+              <Icon size={20} className="mb-3 text-orange-400" />
+              <h3 className="mb-1 font-semibold text-white">{item.title}</h3>
+              <p className="text-sm leading-6 text-zinc-500">{item.detail}</p>
             </div>
           );
         })}

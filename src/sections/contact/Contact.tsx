@@ -1,31 +1,26 @@
-
 import { Container, SectionTitle } from "../../components/ui";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-32"
-    >
+    <section id="contact" className="relative overflow-hidden py-24 sm:py-32">
+      <div className="pointer-events-none absolute -left-48 bottom-0 h-96 w-96 rounded-full bg-orange-500/[0.08] blur-[120px]" />
       <Container>
-        <SectionTitle
-          subtitle="Contact"
-          title="Let's Work Together"
-        />
+        <div className="relative mb-12 max-w-3xl">
+          <SectionTitle
+            subtitle="Have a project in mind?"
+            title="Let's Create Something"
+          />
+          <p className="mt-5 max-w-2xl text-base leading-8 text-zinc-400">
+            Share what you are building, the visual problem you need to solve,
+            or the kind of 3D work you have in mind. I’m available to discuss
+            character, product visualization, and animation projects.
+          </p>
+        </div>
 
-        <div className="grid gap-16 lg:grid-cols-2">
-          <div>
-            <p className="mb-8 max-w-lg text-zinc-400">
-              Whether you need a stylized character,
-              animation, or a custom 3D asset, I'd love
-              to hear about your project.
-            </p>
-
-            <ContactInfo />
-          </div>
-
+        <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <ContactInfo />
           <ContactForm />
         </div>
       </Container>

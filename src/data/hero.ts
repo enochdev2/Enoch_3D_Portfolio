@@ -1,18 +1,7 @@
 export const hero = {
   name: "Enoch Promise",
-
-  title: "3D Character Artist & Animator",
-
+  title: "3D Artist & Animator",
   description:
-    "Creating stylized characters, animations and digital experiences that help businesses stand out.",
-
-  image: "/images/hero/character.png",
-
-  resume: "/resume.pdf",
-
-  social: {
-    youtube: "#",
-    linkedin: "#",
-    github: "#",
-  },
+    "I create stylized characters, product visuals, and animations in Blender—taking ideas from modeling and materials through lighting, rendering, and motion.",
+  focus: ["Character Art", "Product Visualization", "Animation"],
 };

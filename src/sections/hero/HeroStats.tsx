@@ -1,25 +1,27 @@
-import { Card } from "../../components/ui";
+import { Box, Clapperboard, Cuboid } from "lucide-react";
+
+const focus = [
+  { icon: Box, title: "Character art" },
+  { icon: Cuboid, title: "Product visuals" },
+  { icon: Clapperboard, title: "Animation" },
+];
 
 export default function HeroStats() {
   return (
-    <div className="mt-16 grid grid-cols-3 gap-5">
-      <Card>
-        <h3 className="text-3xl font-bold text-orange-500">10+</h3>
+    <div className="mt-10 grid grid-cols-3 gap-3">
+      {focus.map((item) => {
+        const Icon = item.icon;
 
-        <p className="text-zinc-400">Projects</p>
-      </Card>
-
-      <Card>
-        <h3 className="text-3xl font-bold text-orange-500">5+</h3>
-
-        <p className="text-zinc-400">Simulations</p>
-      </Card>
-
-      <Card>
-        <h3 className="text-3xl font-bold text-orange-500">100%</h3>
-
-        <p className="text-zinc-400">Passion</p>
-      </Card>
+        return (
+          <div
+            key={item.title}
+            className="rounded-2xl border border-white/10 bg-white/[0.025] p-4"
+          >
+            <Icon size={20} className="mb-3 text-orange-400" />
+            <p className="text-xs font-medium text-zinc-300">{item.title}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }

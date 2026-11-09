@@ -5,14 +5,13 @@ import Projects from "../sections/projects/Projects";
 import Services from "../sections/services/Services";
 import Skills from "../sections/skills/Skills";
 
-
 export default function Home() {
   return (
     <>
       <Hero />
-      <Skills />
       <Projects />
       <About />
+      <Skills />
       <Services />
       <Contact />
     </>

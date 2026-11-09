@@ -1,34 +1,14 @@
 export const about = {
   intro:
-  "I’m Enoch Promise, a 3D Character Artist & Animator passionate about bringing characters, products, and stories to life through 3D. ",
+    "I’m Enoch Promise, a 3D artist and animator focused on stylized character art, product visualization, and motion. I enjoy turning an idea into a clear visual form—from the first model to the final render.",
 
   intro2:
-  "My work combines **character art, animation, and visual storytelling, with a focus on stylized and cartoon aesthetics. I work across the 3D pipeline, including modeling, sculpting, retopology, UV unwrapping, texturing, materials, rigging, skinning, lighting, rendering, and animation.",
+    "My workflow covers modeling, sculpting, retopology, UV unwrapping, texturing, materials, rigging, skinning, lighting, rendering, and animation. I choose the techniques that best serve the shape, story, and purpose of each piece.",
 
   intro3:
-  "Alongside character work, I create 3D product visualizations and commercial animations, turning everyday products into polished visuals designed for advertising, social media, and digital experiences. I’m continuously developing my artistic and technical skills through hands-on projects, experimentation, and storytelling.",
+    "I also create product-focused visuals for advertising and digital presentation, using composition, materials, and movement to make everyday objects more engaging.",
 
   intro4:
-  "This portfolio is a collection of that journey — the characters I create, the products I visualize, and the animations I bring to life. Currently exploring:** Character Art • Animation • Product Visualization • Visual Storytelling",
+    "This portfolio brings together selected character studies, product visualizations, hard-surface models, and simulation experiments. Each project is an opportunity to refine both the artistic result and the process behind it.",
 
-  // experience: "1+ Years Learning",
-  // experience: "1+ Year of 3D Practice",
-
-  software: [
-    "Blender",
-    // "Substance Painter",
-    // "Photoshop",
-    "Unreal Engine",
-  ],
-
-  services: [
-    "3D Character Modeling",
-    "Character Rigging",
-    "3D Animation",
-    "Cartoon Filmmaking",
-    "Product Visualization",
-    "Product Animation",
-    "Hard Surface Modeling",
-    "3D Simulation",
-  ],
 };
