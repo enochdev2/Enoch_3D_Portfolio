@@ -2,14 +2,13 @@ import Container from "../ui/Container";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-800 py-10">
-      <Container className="flex flex-col items-center justify-between gap-4 md:flex-row">
-        <p className="text-zinc-500">
-          © 2026 Enoch Promise.
+    <footer className="border-t border-white/10 py-8">
+      <Container className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
+        <p className="text-sm text-zinc-500">
+          © {new Date().getFullYear()} Enoch Promise. All rights reserved.
         </p>
-
-        <p className="text-zinc-500">
-          Building System and Creating Digital Experiences.
+        <p className="text-xs uppercase tracking-[0.16em] text-zinc-600">
+          3D Art · Character · Product · Motion
         </p>
       </Container>
     </footer>

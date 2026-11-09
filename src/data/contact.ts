@@ -1,5 +1,5 @@
 import {
-    LineChart,
+    // Linkedin,
     Mail,
     Video,
     X
@@ -14,9 +14,9 @@ export const contactInfo = [
   },
   {
     title: "LinkedIn",
-    value: "linkedin.com/in/enoch-akhabue-3d",
-    href: "https://www.linkedin.com/in/enoch-akhabue-3d/",
-    icon: LineChart,
+    value: "https://www.linkedin.com/in/enoch-akhabue-3d",
+    href: "https://www.linkedin.com/in/enoch-akhabue-3d",
+    icon: X,
   },
   {
     title: "YouTube",

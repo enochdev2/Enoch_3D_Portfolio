@@ -9,7 +9,7 @@ export const services: Service[] = [
   {
     title: "Film & Character",
     description:
-      "Creating stylized characters and visual worlds designed for animation, storytelling, and memorable experiences.",
+      "Developing stylized characters with expressive forms and clear visual identities for animation and storytelling.",
     items: [
       "Character Modeling",
       "Character Design",
@@ -22,7 +22,7 @@ export const services: Service[] = [
   {
     title: "Commercial & Product",
     description:
-      "Transforming products and ideas into high-impact 3D visuals that communicate value, capture attention, and support marketing.",
+      "Turning product concepts into considered 3D visuals through modeling, materials, lighting, and commercial composition.",
     items: [
       "Product Modeling",
       "Product Visualization",
@@ -35,7 +35,7 @@ export const services: Service[] = [
   {
     title: "Animation & Storytelling",
     description:
-      "Bringing characters, products, and concepts to life through purposeful motion, cinematic composition, and visual storytelling.",
+      "Giving characters and products a sense of life through movement, camera work, timing, and visual storytelling.",
     items: [
       "Character Animation",
       "Product Animation",
@@ -48,7 +48,7 @@ export const services: Service[] = [
   {
     title: "3D Assets & FX",
     description:
-      "Building supporting assets and visual effects that add depth, realism, and production value to creative projects.",
+      "Creating supporting 3D assets and simulation studies that add detail, physical behavior, and depth to a scene.",
     items: [
       "Hard Surface Assets",
       "Environment Assets",
@@ -57,11 +57,4 @@ export const services: Service[] = [
     ],
     icon: "simulation",
   },
-];
-
-export const software = [
-  "Blender",
-  "Substance 3D Painter",
-  "Photoshop",
-  "Unreal Engine",
 ];
