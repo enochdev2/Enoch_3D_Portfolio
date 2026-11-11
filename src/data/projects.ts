@@ -1,5 +1,6 @@
 import {
   Human,
+  walkCycleImage,
   mangoJuice,
   clothSimulation,
   CatCartoon,
@@ -31,20 +32,17 @@ export const projects: Project[] = [
   {
     id: 1,
     slug: "low-poly-human",
-    title: "Character Rigging & Walk Cycle",
+    title: "Human Modeling",
     category: "Character",
     description:
-      "A Blender character study showcasing a T-pose model alongside a walk-cycle animation, bringing the character from a static pose into motion.",
+      "A low-poly human character modeling study focused on form, proportions, and silhouette.",
     cover: Human,
     image: Human,
     overview:
-      "This character study connects the model's original T-pose presentation with a walk-cycle animation. The accompanying video shows the character in motion, while the still image provides a clear view of the underlying character design. Together, they highlight both modeling and character animation.",
-    gallery: [
-      { type: "image", src: Human },
-      { type: "video", src: "https://youtu.be/YQpVutKlswo" },
-    ],
+      "A human character model created in Blender, presented in a neutral pose to show its overall form and proportions. This project focuses on the character modeling work, separately from the walk-cycle animation.",
+    gallery: [{ type: "image", src: Human }],
     software: ["Blender"],
-    tags: ["Character Animation", "Walk Cycle", "Rigging"],
+    tags: ["Human Modeling", "Character", "3D Modeling"],
   },
   {
     id: 2,
@@ -194,5 +192,23 @@ export const projects: Project[] = [
     ],
     software: ["Blender"],
     tags: ["Material Study", "Lighting", "Product Rendering"],
+  },
+  {
+    id: 11,
+    slug: "walk-cycle-animation",
+    title: "Walk Cycle Animation",
+    category: "Character",
+    description:
+      "A rigged Blender character brought to life through a walk-cycle animation, with an emphasis on leg movement, posing, and timing.",
+    cover: walkCycleImage,
+    image: walkCycleImage,
+    overview:
+      "A character animation study using a rigged model to create a repeating walk cycle. The accompanying still shows the character's rig controls and walking pose; the video demonstrates the resulting animation.",
+    gallery: [
+      { type: "video", src: "https://youtu.be/YQpVutKlswo" },
+      { type: "image", src: walkCycleImage },
+    ],
+    software: ["Blender"],
+    tags: ["Walk Cycle", "Character Rigging", "Animation"],
   },
 ];

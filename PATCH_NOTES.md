@@ -1,37 +1,28 @@
-# Character Rigging & Walk Cycle — targeted patch
+# Walk Cycle Animation – Separate Project Fix
 
-## Changes
-- Updates the existing `Low-Poly Human` project rather than duplicating the character image or introducing another project card.
-- Renames the display title to `Character Rigging & Walk Cycle`.
-- Reuses the existing `Human.png` T-pose image for both the project cover and image gallery.
-- Includes the supplied walk-cycle YouTube video (`https://youtu.be/YQpVutKlswo`) beside the character image in the project gallery.
-- Updates the project description, overview and tags to describe the modeling/animation work.
-- Preserves the project `id` (1), slug (`low-poly-human`) and Character category, so existing links and filters continue to work.
+## Root cause
+The preceding patch renamed `low-poly-human` to "Character Rigging & Walk Cycle" and attached the video to that existing project. The dedicated walk-cycle image in `src/assets/hero/walk cycle image.png` was not imported into the project catalogue, so a separate card did not exist.
+
+## Fix
+- Restore the existing `low-poly-human` project as **Human Modeling**, keeping its original `Human.png` cover and image-only gallery.
+- Add a **new** `walk-cycle-animation` project (ID 11), visible in **My Work** and the **Character** filter, with the cover image `src/assets/hero/walk cycle image.png`.
+- Make the walk-cycle YouTube link `https://youtu.be/YQpVutKlswo` the first media item in the new project's gallery; the correct still image is shown as the second media item.
+- Export `walkCycleImage` from `src/assets/hero/index.ts`. The patch includes the existing image asset so it also works if the image is absent from your local checkout.
+- No changes to other project entries, layout, components, filters, or animation effects.
 
 ## Apply on macOS
-From the root of your current portfolio project:
+From the repository root:
 
-```bash
-unzip -o ~/Downloads/enoch-portfolio-walk-cycle-patch.zip -d .
-```
-
-Then run:
-
-```bash
+```sh
+unzip -o ~/Downloads/enoch-portfolio-walk-cycle-separate-project-fix.zip -d .
+git diff --check
 npm run lint
 npx tsc --noEmit
 npm run build
 npm run dev
 ```
 
-Open the **Character Rigging & Walk Cycle** project in your portfolio to see the T-pose image and embedded video. The original video URL uses `youtu.be`; the existing gallery code supports this format and converts it to a YouTube privacy-enhanced embed.
+The video is rendered by the project's existing `ProjectGallery` YouTube URL handler, which already handles `youtu.be` links.
 
-## Verification
-- Targeted source replacement: verified exactly once.
-- Existing `Human.png` asset reference: verified in the uploaded ZIP.
-- Existing `youtu.be` URL support: verified in the uploaded source.
-- Other four existing YouTube video IDs: retained.
-- ZIP integrity and TypeScript syntax: checked.
-- Full project build and browser playback: **not verified** because the uploaded archive does not contain the complete Vite/TypeScript config and runtime environment.
-
-Note: The still image is an existing character asset from this ZIP; correspondence to the model featured in the YouTube video could not be independently verified.
+## Verification and limits
+Archive integrity, source transformations, project record uniqueness, asset presence, and link handling have been checked against the supplied ZIP. This source archive does not include all Vite/TypeScript configuration files, so a complete build cannot be verified from it alone.
