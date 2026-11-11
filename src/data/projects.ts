@@ -31,17 +31,20 @@ export const projects: Project[] = [
   {
     id: 1,
     slug: "low-poly-human",
-    title: "Low-Poly Human",
+    title: "Character Rigging & Walk Cycle",
     category: "Character",
     description:
-      "A stylized character study focused on readable proportions, simplified geometry, and a clean low-poly silhouette.",
+      "A Blender character study showcasing a T-pose model alongside a walk-cycle animation, bringing the character from a static pose into motion.",
     cover: Human,
     image: Human,
     overview:
-      "Created in Blender, this character explores how simple geometry can communicate the human form. The work focuses on proportion, shape language, and keeping the silhouette clear without unnecessary detail.",
-    gallery: [{ type: "image", src: Human }],
+      "This character study connects the model's original T-pose presentation with a walk-cycle animation. The accompanying video shows the character in motion, while the still image provides a clear view of the underlying character design. Together, they highlight both modeling and character animation.",
+    gallery: [
+      { type: "image", src: Human },
+      { type: "video", src: "https://youtu.be/YQpVutKlswo" },
+    ],
     software: ["Blender"],
-    tags: ["Character Art", "Low Poly", "3D Modeling"],
+    tags: ["Character Animation", "Walk Cycle", "Rigging"],
   },
   {
     id: 2,

@@ -1,43 +1,37 @@
-# Interaction & Motion Upgrade
+# Character Rigging & Walk Cycle — targeted patch
 
-This is a targeted patch for the existing React + TypeScript + Tailwind + Framer Motion portfolio.
+## Changes
+- Updates the existing `Low-Poly Human` project rather than duplicating the character image or introducing another project card.
+- Renames the display title to `Character Rigging & Walk Cycle`.
+- Reuses the existing `Human.png` T-pose image for both the project cover and image gallery.
+- Includes the supplied walk-cycle YouTube video (`https://youtu.be/YQpVutKlswo`) beside the character image in the project gallery.
+- Updates the project description, overview and tags to describe the modeling/animation work.
+- Preserves the project `id` (1), slug (`low-poly-human`) and Character category, so existing links and filters continue to work.
 
-## What changes
+## Apply on macOS
+From the root of your current portfolio project:
 
-- Adds a subtle scroll-progress line and an animated back-to-top control.
-- Adds scroll-aware active navigation and animated navigation underline.
-- Makes the hero artwork respond to pointer movement with perspective, a moving light highlight, orbit detail, and floating information labels.
-- Adds a magnetic response to the primary hero CTA.
-- Upgrades project cards with pointer-tracked lighting, stronger 3D tilt, hover depth, and a motion badge for projects containing video.
-- Animates category-filter selection and project-grid rearrangement.
-- Adds reveal and hover motion to project gallery media.
-- Improves scroll reveals with a subtle blur-to-sharp transition.
-- Respects the user's reduced-motion preference for the main animated interactions.
+```bash
+unzip -o ~/Downloads/enoch-portfolio-walk-cycle-patch.zip -d .
+```
 
-## Files included
+Then run:
 
-- `src/components/common/ScrollExperience.tsx` (new)
-- `src/components/common/Reveal.tsx`
-- `src/components/layout/Layout.tsx`
-- `src/components/layout/Navbar.tsx`
-- `src/sections/hero/HeroContent.tsx`
-- `src/sections/hero/HeroImage.tsx`
-- `src/sections/projects/ProjectCard.tsx`
-- `src/sections/projects/ProjectFilter.tsx`
-- `src/sections/projects/ProjectGrid.tsx`
-- `src/sections/projects/ProjectGallery.tsx`
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+npm run dev
+```
 
-## Apply
-
-Extract this ZIP into the root of the existing portfolio project and allow the files under `src/` to be overwritten. The new `ScrollExperience.tsx` file will be added automatically.
+Open the **Character Rigging & Walk Cycle** project in your portfolio to see the T-pose image and embedded video. The original video URL uses `youtu.be`; the existing gallery code supports this format and converts it to a YouTube privacy-enhanced embed.
 
 ## Verification
+- Targeted source replacement: verified exactly once.
+- Existing `Human.png` asset reference: verified in the uploaded ZIP.
+- Existing `youtu.be` URL support: verified in the uploaded source.
+- Other four existing YouTube video IDs: retained.
+- ZIP integrity and TypeScript syntax: checked.
+- Full project build and browser playback: **not verified** because the uploaded archive does not contain the complete Vite/TypeScript config and runtime environment.
 
-- TypeScript/TSX syntax transpilation: passed for all 10 included source files.
-- Relative import paths: checked against the supplied source archive.
-- ZIP integrity: passed.
-- Full TypeScript type-check and Vite production build: not run. The supplied source archive did not include `tsconfig.json`, `vite.config.ts`, `index.html`, or installed dependencies, so a full project build could not be verified from that archive.
-
-## Compatibility
-
-No new npm packages are required. The patch uses the project's existing Framer Motion and Lucide dependencies. It does not add WebGL or actual Blender geometry; these are interaction and CSS-perspective improvements. Real-time 3D model rendering can be added as a separate phase using React Three Fiber and `.glb` assets.
+Note: The still image is an existing character asset from this ZIP; correspondence to the model featured in the YouTube video could not be independently verified.
