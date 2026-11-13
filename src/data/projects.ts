@@ -2,11 +2,15 @@ import {
   Human,
   walkCycleImage,
   mangoJuice,
-  clothSimulation,
+  clothSimulationUpdated,
   CatCartoon,
   nivea,
   earphone,
-  hammer,
+  headphoneProduct,
+  hammerAngleOne,
+  hammerAngleTwo,
+  watermelonMaterial,
+  woodMaterial,
 } from "../assets/hero";
 
 export interface GalleryItem {
@@ -66,11 +70,14 @@ export const projects: Project[] = [
     category: "Hard Surface",
     description:
       "A hard-surface prop study built around proportion, clean primary forms, and carefully defined mechanical details.",
-    cover: hammer,
-    image: hammer,
+    cover: hammerAngleOne,
+    image: hammerAngleOne,
     overview:
       "A hard-surface model created in Blender to practice clean forms, proportions, topology, and the presentation of a familiar everyday object.",
-    gallery: [{ type: "image", src: hammer }],
+    gallery: [
+      { type: "image", src: hammerAngleOne },
+      { type: "image", src: hammerAngleTwo },
+    ],
     software: ["Blender"],
     tags: ["Hard Surface", "Prop Modeling", "3D Asset"],
   },
@@ -81,11 +88,14 @@ export const projects: Project[] = [
     category: "Simulation",
     description:
       "A cloth simulation study exploring fabric movement, folds, draping, and the visual behavior of simulated materials.",
-    cover: clothSimulation,
-    image: clothSimulation,
+    cover: clothSimulationUpdated,
+    image: clothSimulationUpdated,
     overview:
       "Created in Blender, this study explores cloth behavior and the way fabric responds to simulation settings. The focus is on the resulting folds, drape, and sense of movement.",
-    gallery: [{ type: "image", src: clothSimulation }],
+    gallery: [
+      { type: "image", src: clothSimulationUpdated },
+      { type: "video", src: "https://youtube.com/shorts/IDNIdUD7pz0" },
+    ],
     software: ["Blender"],
     tags: ["Simulation", "Cloth", "Visual Effects"],
   },
@@ -131,14 +141,17 @@ export const projects: Project[] = [
     title: "Headphone Product Animation",
     category: "Product Visualization",
     description:
-      "A product-focused study intended to showcase headphone modeling, materials, lighting, and commercial presentation.",
-    cover: "/images/projects/headphone.jpg",
-    image: "/images/projects/headphone.jpg",
+      "A cinematic 3D headphone product animation highlighting the sculpted form, materials, and lighting of the design.",
+    cover: headphoneProduct,
+    image: headphoneProduct,
     overview:
-      "A 3D headphone visualization focused on product form, material treatment, lighting, camera composition, and commercial presentation.",
-    gallery: [{ type: "image", src: "/images/projects/headphone.jpg" }],
+      "This headphone product animation presents the design through a polished render and moving visuals. The accompanying still highlights the form and lighting, while the embedded video shows the animation in motion.",
+    gallery: [
+      { type: "video", src: "https://youtube.com/shorts/eMSvnfB06jA" },
+      { type: "image", src: headphoneProduct },
+    ],
     software: ["Blender"],
-    tags: ["Product Visualization", "Consumer Electronics", "3D Rendering"],
+    tags: ["Product Visualization", "Headphone Animation", "3D Rendering"],
   },
   {
     id: 8,
@@ -210,5 +223,35 @@ export const projects: Project[] = [
     ],
     software: ["Blender"],
     tags: ["Walk Cycle", "Character Rigging", "Animation"],
+  },
+  {
+    id: 12,
+    slug: "watermelon-material-study",
+    title: "Watermelon Material Study",
+    category: "Material & Lighting",
+    description:
+      "A stylized watermelon surface study exploring green color variation, striped patterning, and a rendered fruit form.",
+    cover: watermelonMaterial,
+    image: watermelonMaterial,
+    overview:
+      "An exploration of a watermelon-inspired material on a three-dimensional form. The render emphasizes green stripes, color variation, and how the surface responds to light.",
+    gallery: [{ type: "image", src: watermelonMaterial }],
+    software: ["Blender"],
+    tags: ["Material Study", "Texturing", "Organic Surface"],
+  },
+  {
+    id: 13,
+    slug: "wood-texture-material-study",
+    title: "Wood Texture Material Study",
+    category: "Material & Lighting",
+    description:
+      "A wood-surface study presenting grain, color variation, and reflected light across simple geometric forms.",
+    cover: woodMaterial,
+    image: woodMaterial,
+    overview:
+      "A material and lighting study featuring wood grain on a sphere and a rectangular object. It compares how surface pattern and highlights read across curved and flat forms.",
+    gallery: [{ type: "image", src: woodMaterial }],
+    software: ["Blender"],
+    tags: ["Wood Texture", "Materials", "Lighting"],
   },
 ];

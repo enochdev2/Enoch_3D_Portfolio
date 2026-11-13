@@ -8,6 +8,29 @@ import clothSimulation from "./clothSimulation.png";
 import nivea from "./nivea.png";
 import hammer from "./hammer.png";
 import earphone from "./earphone.png";
+import headphoneProduct from "./headphone-product.png";
+import clothSimulationUpdated from "./cloth-simulation-update.webp";
+import hammerAngleOne from "./hammer-angle-01.webp";
+import hammerAngleTwo from "./hammer-angle-02.webp";
+import watermelonMaterial from "./watermelon-material.webp";
+import woodMaterial from "./wood-material.webp";
 
 
-export { character, enoch, Human, walkCycleImage, mangoJuice, CatCartoon, clothSimulation, nivea, hammer, earphone };
+export {
+  character,
+  enoch,
+  Human,
+  walkCycleImage,
+  mangoJuice,
+  CatCartoon,
+  clothSimulation,
+  nivea,
+  hammer,
+  earphone,
+  headphoneProduct,
+  clothSimulationUpdated,
+  hammerAngleOne,
+  hammerAngleTwo,
+  watermelonMaterial,
+  woodMaterial,
+};
